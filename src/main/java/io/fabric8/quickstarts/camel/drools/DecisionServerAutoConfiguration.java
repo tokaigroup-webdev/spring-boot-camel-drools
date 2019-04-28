@@ -27,7 +27,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class DecisionServerAutoConfiguration {
 
-    private static final String HELLO_RULES_PACKAGE_NAME = "org.openshift.quickstarts.decisionserver.hellorules";
+    private static final String HELLO_RULES_PACKAGE_NAME = "org.openshift.quickstarts.rhdm.hellorules";
 
     /**
      * Adding a customized XStream data-format to the registry.
