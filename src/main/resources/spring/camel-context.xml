@@ -35,6 +35,7 @@
             <marshal id="route-marshal">
                 <xstream/>
             </marshal>
+            <log id="route-log-request" message="${body}"/>
             <to id="to-http-rest" uri="http://{{service:{{kieserver.service}}:{{kieserver.devel-service}}}}/{{kieserver.path}}?authMethod=Basic&amp;authUsername={{kieserver.username}}&amp;authPassword={{kieserver.password}}"/>
             <!-- Unmarshal the response -->
             <unmarshal id="route-unmarshal">
